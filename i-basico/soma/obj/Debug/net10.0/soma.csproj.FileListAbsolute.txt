@@ -1,0 +1,14 @@
+C:\Users\Pichau\source\repos\soma\bin\Debug\net10.0\soma.exe
+C:\Users\Pichau\source\repos\soma\bin\Debug\net10.0\soma.deps.json
+C:\Users\Pichau\source\repos\soma\bin\Debug\net10.0\soma.runtimeconfig.json
+C:\Users\Pichau\source\repos\soma\bin\Debug\net10.0\soma.dll
+C:\Users\Pichau\source\repos\soma\bin\Debug\net10.0\soma.pdb
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.AssemblyInfoInputs.cache
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.AssemblyInfo.cs
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.dll
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\refint\soma.dll
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.pdb
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\soma.genruntimeconfig.cache
+C:\Users\Pichau\source\repos\soma\obj\Debug\net10.0\ref\soma.dll
