@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../dragao/dragao.csproj" />
+  <Project Path="../mana/mana.csproj" />
+  <Project Path="../velocidade/velocidade.csproj" />
+  <Project Path="recorde.csproj" />
+</Solution>

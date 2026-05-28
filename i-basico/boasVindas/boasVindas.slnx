@@ -6,6 +6,7 @@
   <Project Path="../gorjeta/gorjeta.csproj" Id="6b70bf65-08e5-4e4d-a341-dca407e79129" />
   <Project Path="../lojaParafusos/lojaParafusos.csproj" Id="e20bd1c7-1120-4881-b228-afc3eeaa8949" />
   <Project Path="../media/media.csproj" Id="a782bced-f66d-40cd-9128-b078914260ae" />
+  <Project Path="../pontos/pontos.csproj" Id="8c26a75f-ac78-4bfc-a07f-ecef3de94b6e" />
   <Project Path="../salario/salario.csproj" Id="207d8782-c4dc-45e6-9fb5-6980a2b33bf5" />
   <Project Path="../saudacaoPersonalizada/saudacaoPersonalizada.csproj" Id="95a7688c-6a60-4e21-b38b-59923f13d201" />
   <Project Path="boasVindas.csproj" />
