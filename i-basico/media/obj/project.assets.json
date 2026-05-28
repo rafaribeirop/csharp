@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pichau\\source\\repos\\teste\\teste.csproj",
-      "projectName": "teste",
-      "projectPath": "C:\\Users\\Pichau\\source\\repos\\teste\\teste.csproj",
+      "projectUniqueName": "C:\\Users\\Pichau\\source\\repos\\csharp\\i-basico\\media\\media.csproj",
+      "projectName": "media",
+      "projectPath": "C:\\Users\\Pichau\\source\\repos\\csharp\\i-basico\\media\\media.csproj",
       "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pichau\\source\\repos\\teste\\obj\\",
+      "outputPath": "C:\\Users\\Pichau\\source\\repos\\csharp\\i-basico\\media\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",

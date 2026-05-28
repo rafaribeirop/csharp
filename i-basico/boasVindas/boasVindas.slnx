@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../adicao/adicao.csproj" Id="8c7bc9e9-f626-4df8-8392-1c2c50cd8934" />
+  <Project Path="../estoque/estoque.csproj" Id="29e74126-0e7d-433c-b875-ede5d7f22673" />
+  <Project Path="../lojaParafusos/lojaParafusos.csproj" Id="e20bd1c7-1120-4881-b228-afc3eeaa8949" />
+  <Project Path="../media/media.csproj" Id="a782bced-f66d-40cd-9128-b078914260ae" />
+  <Project Path="../saudacaoPersonalizada/saudacaoPersonalizada.csproj" Id="95a7688c-6a60-4e21-b38b-59923f13d201" />
+  <Project Path="boasVindas.csproj" />
+</Solution>
