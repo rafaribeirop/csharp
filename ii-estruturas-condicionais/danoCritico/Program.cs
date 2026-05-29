@@ -13,6 +13,7 @@
             
             int danoTotal = 0;
 
+            // Se o número do dado não estiver entre 1 e 20, exibe mensagem de erro
             if (dado > 20 || dado < 1)
             {
                 Console.WriteLine("Apenas números entre 1 e 20");
