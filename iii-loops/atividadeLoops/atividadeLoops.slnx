@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="../estruturaDoWhile/estruturaDoWhile.csproj" Id="486ecafa-9faa-4719-a039-779ad71636a1" />
+  <Project Path="../estruturaFor/estruturaFor.csproj" Id="88cdcf82-29b7-4e02-9b33-03b0e7087358" />
+  <Project Path="../estruturaWhile/estruturaWhile.csproj" Id="a293fdf4-9f9a-4008-9325-906d7a174cc7" />
   <Project Path="atividadeLoops.csproj" />
 </Solution>
