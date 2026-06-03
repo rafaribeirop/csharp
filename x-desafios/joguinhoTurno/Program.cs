@@ -157,9 +157,9 @@
         {
             int vidaRestaurada = vida + 40;
             //Não pode ultrapassar a vida máxima do personagem (120)
-            if (vidaRestaurada > 120)
+            if (vidaRestaurada > 150)
             {
-                vidaRestaurada = 120;
+                vidaRestaurada = 150;
             }
             return vidaRestaurada;
         }
