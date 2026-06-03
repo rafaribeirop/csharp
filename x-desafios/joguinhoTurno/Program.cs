@@ -7,7 +7,7 @@
         {
             //Atributos do personagem
             int vidaPersonagem = 150;
-            int focousPersonagem = 0;
+            int focusPersonagem = 0;
             int danoBasePersonagem = 30;
 
             //Atributos do boss
@@ -21,7 +21,7 @@
             do
             {
                 Console.WriteLine("Turno " + turno);
-                bool vivoP = personagemVivo(vidaPersonagem);
+                bool vivoP = PersonagemVivo(vidaPersonagem);
                 if (vivoP)
                 {
                     Console.WriteLine("Escolha a habilidade");
@@ -34,26 +34,26 @@
                     {
                         case 1:
                             //Ataque básico: Causa dano igual ao dano base do personagem
-                            danoPersonagem = ataqueBasico(danoBasePersonagem);
+                            danoPersonagem = AtaqueBasico(danoBasePersonagem);
                             break;
 
                         case 2:
                             //Ataque carregado: Causa dano igual ao dobro do dano base do personagem
-                            if (focousPersonagem > 0)
+                            if (focusPersonagem > 0)
 
-                            {   //Ataque carregado consome 1 focous
-                                danoPersonagem = ataqueCarregado(danoBasePersonagem);
-                                focousPersonagem--;
+                            {   //Ataque carregado consome 1 focus
+                                danoPersonagem = AtaqueCarregado(danoBasePersonagem);
+                                focusPersonagem--;
                             } else
                             {   
                                 Console.WriteLine("Não há focous suficiente");
-                                danoPersonagem = ataqueBasico(danoBasePersonagem);
+                                danoPersonagem = AtaqueBasico(danoBasePersonagem);
                             }
                             break;
 
                         case 3:
                             //Curar: Restaura 40 vida do personagem, mas não causa dano ao boss
-                            vidaPersonagem = pocaoCura(vidaPersonagem);
+                            vidaPersonagem = PocaoCura(vidaPersonagem);
                             danoPersonagem = 0;
                             break;
 
@@ -67,17 +67,17 @@
                     Console.WriteLine();
                     vidaBoss -= danoPersonagem;
 
-                    hud(vidaPersonagem, vidaBoss, focousPersonagem);
+                    Hud(vidaPersonagem, vidaBoss, focusPersonagem);
                     Console.WriteLine();
                 }
                
-                bool vivoB = bossVivo(vidaBoss);
+                bool vivoB = BossVivo(vidaBoss);
                 if (vivoB)
                 {
                     Console.WriteLine("Ataque do boss");
                     Console.WriteLine();
                     //Calcula o dano causado pelo boss e aplica ao personagem
-                    int danoBoss = calcularDanoBoss(danoBaseBoss);
+                    int danoBoss = CalcularDanoBoss(danoBaseBoss);
                     vidaPersonagem -= danoBoss;
                     
                     //A vida do boss e do personagem não pode ser negativa
@@ -91,13 +91,13 @@
                         vidaPersonagem = 0;
                     }
 
-                    hud(vidaPersonagem, vidaBoss, focousPersonagem);
+                    Hud(vidaPersonagem, vidaBoss, focusPersonagem);
                     Console.WriteLine();
                 }
              
                 turno++;
                 //A cada turno, o personagem ganha 1 focous
-                focousPersonagem++;
+                focusPersonagem++;
 
             } while (vidaPersonagem > 0 && vidaBoss > 0);
 
@@ -115,7 +115,7 @@
         //======= MÉTODOS =======
 
         //Mostrar HUD
-        static void hud(int vidaP, int vidaB, int focous)
+        static void Hud(int vidaP, int vidaB, int focous)
         {
             Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
             Console.WriteLine("| Vida: " + vidaP + " | Focous: " + focous + " | Boss: " + vidaB + " |");
@@ -123,7 +123,7 @@
         }
 
         //Dano do boss: O boss tem uma chance de 50% de causar um ataque básico (dano igual ao dano base do boss) ou um ataque carregado (dano igual ao dobro do dano base do boss) 
-        static int calcularDanoBoss(int danoBase)
+        static int CalcularDanoBoss(int danoBase)
         {
             int habilidadeBoss = random.Next(1, 3); //Gera um número aleatório entre 1 e 2 para a habilidade do boss
             int danoTotal;
@@ -142,20 +142,20 @@
             return danoTotal;
         }
 
-        static int ataqueBasico(int danoBase)
+        static int AtaqueBasico(int danoBase)
         {
             int danoTotal = danoBase;
             return danoTotal;
         }
 
-        static int ataqueCarregado(int danoBase)
+        static int AtaqueCarregado(int danoBase)
         {
             int danoTotal = danoBase * 2;
             return danoTotal;
         }
 
         //Poção de cura: Restaura 40 de vida
-        static int pocaoCura(int vida)
+        static int PocaoCura(int vida)
         {
             int vidaRestaurada = vida + 40;
             //Não pode ultrapassar a vida máxima do personagem (120)
@@ -167,13 +167,13 @@
         }
 
         //Verificar se o boss está vivo (Boss não pode atacar se tiver sido derrotado)
-        static bool bossVivo(int vidaBoss)
+        static bool BossVivo(int vidaBoss)
         {
             return vidaBoss > 0;
         }
 
         //Verificar se o personagem está vivo (Personagem não pode atacar se tiver sido derrotado)
-        static bool personagemVivo(int vidaPersonagem)
+        static bool PersonagemVivo(int vidaPersonagem)
         {
             return vidaPersonagem > 0;
         }
