@@ -40,11 +40,12 @@
                         case 2:
                             //Ataque carregado: Causa dano igual ao dobro do dano base do personagem
                             if (focousPersonagem > 0)
-                            {
+
+                            {   //Ataque carregado consome 1 focous
                                 danoPersonagem = ataqueCarregado(danoBasePersonagem);
                                 focousPersonagem--;
                             } else
-                            {
+                            {   
                                 Console.WriteLine("Não há focous suficiente");
                                 danoPersonagem = ataqueBasico(danoBasePersonagem);
                             }
@@ -78,7 +79,8 @@
                     //Calcula o dano causado pelo boss e aplica ao personagem
                     int danoBoss = calcularDanoBoss(danoBaseBoss);
                     vidaPersonagem -= danoBoss;
-
+                    
+                    //A vida do boss e do personagem não pode ser negativa
                     if (vidaBoss < 0)
                     {
                         vidaBoss = 0;
