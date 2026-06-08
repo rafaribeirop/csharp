@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../bauTesouro/bauTesouro.csproj" Id="6c3c9e14-328c-47d9-a989-f33252fa2474" />
+  <Project Path="../inventario/inventario.csproj" Id="dbe3884e-ff15-4c6e-971f-7ce843a17d8d" />
+  <Project Path="../mediaNotas/mediaNotas.csproj" Id="0fb383ba-d1c1-452c-85cf-66219cf77dda" />
+  <Project Path="poder.csproj" />
+</Solution>
