@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../guildo/guilda.csproj" />
+  <Project Path="../jogador/jogador.csproj" />
+  <Project Path="../lojinha/lojinha.csproj" />
+  <Project Path="../vidaBoss/vidaBoss.csproj" />
+  <Project Path="parOuImpar.csproj" />
+</Solution>
