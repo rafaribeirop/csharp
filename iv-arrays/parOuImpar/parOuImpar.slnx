@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="../guildo/guilda.csproj" />
+  <Project Path="../hp/hp.csproj" Id="bf64ccb6-d1d9-4570-9339-cffdc2de87b4" />
   <Project Path="../jogador/jogador.csproj" />
   <Project Path="../lojinha/lojinha.csproj" />
   <Project Path="../vidaBoss/vidaBoss.csproj" />
